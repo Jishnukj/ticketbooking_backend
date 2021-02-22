@@ -41,3 +41,46 @@ C:\Users\parvathy.vinu\Desktop\Assignment\Ticket Booking\Ticket_Booking\Ticket_B
 C:\Users\parvathy.vinu\Desktop\Assignment\Ticket Booking\Ticket_Booking\Ticket_Booking\obj\Debug\net5.0\Ticket_Booking.genruntimeconfig.cache
 C:\Users\parvathy.vinu\Desktop\Assignment\Ticket Booking\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\Humanizer.dll
 C:\Users\parvathy.vinu\Desktop\Assignment\Ticket Booking\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\appsettings.json
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\Ticket_Booking.exe
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\Ticket_Booking.deps.json
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\Ticket_Booking.runtimeconfig.json
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\Ticket_Booking.runtimeconfig.dev.json
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\Ticket_Booking.dll
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\ref\Ticket_Booking.dll
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\Ticket_Booking.pdb
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\EFCore.NamingConventions.dll
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\Humanizer.dll
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\Npgsql.dll
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\BusinessService.dll
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\DataService.dll
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\BusinessService.pdb
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\bin\Debug\net5.0\DataService.pdb
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\obj\Debug\net5.0\Ticket_Booking.csprojAssemblyReference.cache
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\obj\Debug\net5.0\Ticket_Booking.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\obj\Debug\net5.0\Ticket_Booking.AssemblyInfoInputs.cache
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\obj\Debug\net5.0\Ticket_Booking.AssemblyInfo.cs
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\obj\Debug\net5.0\Ticket_Booking.csproj.CoreCompileInputs.cache
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\obj\Debug\net5.0\Ticket_Booking.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\obj\Debug\net5.0\Ticket_Booking.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\obj\Debug\net5.0\staticwebassets\Ticket_Booking.StaticWebAssets.Manifest.cache
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\obj\Debug\net5.0\staticwebassets\Ticket_Booking.StaticWebAssets.xml
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\obj\Debug\net5.0\scopedcss\bundle\Ticket_Booking.styles.css
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\obj\Debug\net5.0\Ticket_Booking.RazorTargetAssemblyInfo.cache
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\obj\Debug\net5.0\Ticket_Booking.csproj.CopyComplete
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\obj\Debug\net5.0\Ticket_Booking.dll
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\obj\Debug\net5.0\ref\Ticket_Booking.dll
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\obj\Debug\net5.0\Ticket_Booking.pdb
+C:\Users\jishnu.kj\Documents\forUpload\ticketbooking_backend\Ticket_Booking\Ticket_Booking\obj\Debug\net5.0\Ticket_Booking.genruntimeconfig.cache

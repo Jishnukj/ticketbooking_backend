@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\parvathy.vinu\\Desktop\\Assignment\\Ticket Booking\\Ticket_Booking\\Ticket_Booking\\Ticket_Booking.csproj": {}
+    "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\Ticket_Booking\\Ticket_Booking.csproj": {}
   },
   "projects": {
-    "C:\\Users\\parvathy.vinu\\Desktop\\Assignment\\Ticket Booking\\Ticket_Booking\\BusinessService\\BusinessService.csproj": {
+    "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\BusinessService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\parvathy.vinu\\Desktop\\Assignment\\Ticket Booking\\Ticket_Booking\\BusinessService\\BusinessService.csproj",
+        "projectUniqueName": "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\BusinessService.csproj",
         "projectName": "BusinessService",
-        "projectPath": "C:\\Users\\parvathy.vinu\\Desktop\\Assignment\\Ticket Booking\\Ticket_Booking\\BusinessService\\BusinessService.csproj",
-        "packagesPath": "C:\\Users\\parvathy.vinu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\parvathy.vinu\\Desktop\\Assignment\\Ticket Booking\\Ticket_Booking\\BusinessService\\obj\\",
+        "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\BusinessService.csproj",
+        "packagesPath": "C:\\Users\\jishnu.kj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\parvathy.vinu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jishnu.kj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\parvathy.vinu\\Desktop\\Assignment\\Ticket Booking\\Ticket_Booking\\DataService\\DataService.csproj": {
-                "projectPath": "C:\\Users\\parvathy.vinu\\Desktop\\Assignment\\Ticket Booking\\Ticket_Booking\\DataService\\DataService.csproj"
+              "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj": {
+                "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj"
               }
             }
           }
@@ -62,17 +62,17 @@
         }
       }
     },
-    "C:\\Users\\parvathy.vinu\\Desktop\\Assignment\\Ticket Booking\\Ticket_Booking\\DataService\\DataService.csproj": {
+    "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\parvathy.vinu\\Desktop\\Assignment\\Ticket Booking\\Ticket_Booking\\DataService\\DataService.csproj",
+        "projectUniqueName": "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj",
         "projectName": "DataService",
-        "projectPath": "C:\\Users\\parvathy.vinu\\Desktop\\Assignment\\Ticket Booking\\Ticket_Booking\\DataService\\DataService.csproj",
-        "packagesPath": "C:\\Users\\parvathy.vinu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\parvathy.vinu\\Desktop\\Assignment\\Ticket Booking\\Ticket_Booking\\DataService\\obj\\",
+        "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj",
+        "packagesPath": "C:\\Users\\jishnu.kj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\DataService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\parvathy.vinu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jishnu.kj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -146,17 +146,17 @@
         }
       }
     },
-    "C:\\Users\\parvathy.vinu\\Desktop\\Assignment\\Ticket Booking\\Ticket_Booking\\Ticket_Booking\\Ticket_Booking.csproj": {
+    "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\Ticket_Booking\\Ticket_Booking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\parvathy.vinu\\Desktop\\Assignment\\Ticket Booking\\Ticket_Booking\\Ticket_Booking\\Ticket_Booking.csproj",
+        "projectUniqueName": "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\Ticket_Booking\\Ticket_Booking.csproj",
         "projectName": "Ticket_Booking",
-        "projectPath": "C:\\Users\\parvathy.vinu\\Desktop\\Assignment\\Ticket Booking\\Ticket_Booking\\Ticket_Booking\\Ticket_Booking.csproj",
-        "packagesPath": "C:\\Users\\parvathy.vinu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\parvathy.vinu\\Desktop\\Assignment\\Ticket Booking\\Ticket_Booking\\Ticket_Booking\\obj\\",
+        "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\Ticket_Booking\\Ticket_Booking.csproj",
+        "packagesPath": "C:\\Users\\jishnu.kj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\Ticket_Booking\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\parvathy.vinu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jishnu.kj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -170,11 +170,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\parvathy.vinu\\Desktop\\Assignment\\Ticket Booking\\Ticket_Booking\\BusinessService\\BusinessService.csproj": {
-                "projectPath": "C:\\Users\\parvathy.vinu\\Desktop\\Assignment\\Ticket Booking\\Ticket_Booking\\BusinessService\\BusinessService.csproj"
+              "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\BusinessService.csproj": {
+                "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\BusinessService.csproj"
               },
-              "C:\\Users\\parvathy.vinu\\Desktop\\Assignment\\Ticket Booking\\Ticket_Booking\\DataService\\DataService.csproj": {
-                "projectPath": "C:\\Users\\parvathy.vinu\\Desktop\\Assignment\\Ticket Booking\\Ticket_Booking\\DataService\\DataService.csproj"
+              "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj": {
+                "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj"
               }
             }
           }
