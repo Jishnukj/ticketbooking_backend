@@ -43,7 +43,7 @@ namespace Ticket_Booking
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ticket_Booking", Version = "v1" });
             });
 
-            services.AddDbContext<ApplicationdbContext>(options => options.UseNpgsql("server=localhost; Port=5433; Database=Ticket_Booking; User Id=postgres; Password=nimisha@03;")
+            services.AddDbContext<ApplicationdbContext>(options => options.UseNpgsql("server=localhost; Port=5432; Database=Ticket_Booking; User Id=postgres; Password=postgres;")
             .UseSnakeCaseNamingConvention());
         }
 
