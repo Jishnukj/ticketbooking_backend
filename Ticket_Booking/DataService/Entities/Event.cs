@@ -21,7 +21,7 @@ namespace DataService.Entities
         public string artist_name { get; set; }
         public string description { get; set; }
         public bool approval_status { get; set; }
-
+        public string image { get; set; }
 
     }
 }

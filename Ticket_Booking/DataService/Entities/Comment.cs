@@ -20,5 +20,6 @@ namespace DataService.Entities
         [ForeignKey("event_id")]
         public Event Event { get; set; }
         public string comment { get; set; }
+        public string reply { get; set; }
     }
 }
