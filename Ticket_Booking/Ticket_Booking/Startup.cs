@@ -38,6 +38,8 @@ namespace Ticket_Booking
             services.AddScoped<IUserRepo, UserRepo>();
             services.AddScoped<IVenueService, VenueService>();
             services.AddScoped<IVenueRepo, VenueRepo>();
+            services.AddScoped<IEventService, EventService>();
+            services.AddScoped<IEventRepo, EventRepo>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ticket_Booking", Version = "v1" });

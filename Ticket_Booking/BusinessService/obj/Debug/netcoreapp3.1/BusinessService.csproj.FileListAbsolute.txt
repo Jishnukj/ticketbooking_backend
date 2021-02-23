@@ -61,3 +61,6 @@ C:\Users\MY PC\ticketbooking_backend\Ticket_Booking\BusinessService\obj\Debug\ne
 C:\Users\MY PC\ticketbooking_backend\Ticket_Booking\BusinessService\bin\Debug\netcoreapp3.1\BusinessService.runtimeconfig.json
 C:\Users\MY PC\ticketbooking_backend\Ticket_Booking\BusinessService\bin\Debug\netcoreapp3.1\BusinessService.runtimeconfig.dev.json
 C:\Users\MY PC\ticketbooking_backend\Ticket_Booking\BusinessService\obj\Debug\netcoreapp3.1\BusinessService.genruntimeconfig.cache
+C:\Users\parvathy.vinu\ticketbooking_backend\Ticket_Booking\BusinessService\bin\Debug\netcoreapp3.1\BusinessService.runtimeconfig.json
+C:\Users\parvathy.vinu\ticketbooking_backend\Ticket_Booking\BusinessService\bin\Debug\netcoreapp3.1\BusinessService.runtimeconfig.dev.json
+C:\Users\parvathy.vinu\ticketbooking_backend\Ticket_Booking\BusinessService\obj\Debug\netcoreapp3.1\BusinessService.genruntimeconfig.cache
