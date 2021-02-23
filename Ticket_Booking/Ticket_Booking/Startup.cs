@@ -34,6 +34,8 @@ namespace Ticket_Booking
             services.AddControllers();
             services.AddScoped<ICommentService, CommentService>();
             services.AddScoped<ICommentRepo, CommentRepo>();
+            services.AddScoped<IVenueService, VenueService>();
+            services.AddScoped<IVenueRepo, VenueRepo>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ticket_Booking", Version = "v1" });

@@ -6,7 +6,7 @@ using System.Text;
 
 namespace DataService.Repo
 {
-    public class VenueRepo:IVenueRepo
+    public class VenueRepo : IVenueRepo
     {
         private readonly ApplicationdbContext _dbContext;
         public VenueRepo(ApplicationdbContext dbContext)
@@ -27,6 +27,23 @@ namespace DataService.Repo
             _dbContext.Venues.Add(venue);
             _dbContext.SaveChanges();
             return true;
+        }
+        public bool Update(Venue venueChange, int id)
+        {
+            Venue venue = _dbContext.Venues.Where(x => x.venue_id == id).FirstOrDefault();
+            if (venue != null)
+            {
+                venue.venue_name = venueChange.venue_name;
+                venue.total_seats = venueChange.total_seats;
+                venue.ticket_rate = venueChange.ticket_rate;
+                _dbContext.SaveChanges();
+                return true;
+
+            }
+            else
+            {
+                return false;
+            }
         }
 
 
