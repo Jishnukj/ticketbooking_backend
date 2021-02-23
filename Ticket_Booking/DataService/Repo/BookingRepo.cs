@@ -9,7 +9,7 @@ namespace DataService.Repo
     public class BookingRepo : IBookingRepo
     {
         private readonly ApplicationdbContext _dbContext;
-        public VenueRepo(ApplicationdbContext dbContext)
+        public BookingRepo(ApplicationdbContext dbContext)
         {
             _dbContext = dbContext;
         }
@@ -21,7 +21,7 @@ namespace DataService.Repo
         }
         public bool addBooking(Booking booking)
         {
-            _dbContext.Booking.Add(booking);
+            _dbContext.Bookings.Add(booking);
             _dbContext.SaveChanges();
             return true;
         }

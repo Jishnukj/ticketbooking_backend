@@ -1069,11 +1069,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\Ticket_Booking\\Ticket_Booking.csproj",
+      "projectUniqueName": "C:\\Users\\jishnu.kj\\Documents\\tu\\ticketbooking_backend\\Ticket_Booking\\Ticket_Booking\\Ticket_Booking.csproj",
       "projectName": "Ticket_Booking",
-      "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\Ticket_Booking\\Ticket_Booking.csproj",
+      "projectPath": "C:\\Users\\jishnu.kj\\Documents\\tu\\ticketbooking_backend\\Ticket_Booking\\Ticket_Booking\\Ticket_Booking.csproj",
       "packagesPath": "C:\\Users\\jishnu.kj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\Ticket_Booking\\obj\\",
+      "outputPath": "C:\\Users\\jishnu.kj\\Documents\\tu\\ticketbooking_backend\\Ticket_Booking\\Ticket_Booking\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jishnu.kj\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1090,11 +1090,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\BusinessService.csproj": {
-              "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\BusinessService.csproj"
+            "C:\\Users\\jishnu.kj\\Documents\\tu\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\BusinessService.csproj": {
+              "projectPath": "C:\\Users\\jishnu.kj\\Documents\\tu\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\BusinessService.csproj"
             },
-            "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj": {
-              "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forUpload\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj"
+            "C:\\Users\\jishnu.kj\\Documents\\tu\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj": {
+              "projectPath": "C:\\Users\\jishnu.kj\\Documents\\tu\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj"
             }
           }
         }
