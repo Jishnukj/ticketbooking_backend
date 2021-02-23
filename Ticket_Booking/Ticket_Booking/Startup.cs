@@ -34,6 +34,8 @@ namespace Ticket_Booking
             services.AddControllers();
             services.AddScoped<ICommentService, CommentService>();
             services.AddScoped<ICommentRepo, CommentRepo>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IUserRepo, UserRepo>();
             services.AddScoped<IVenueService, VenueService>();
             services.AddScoped<IVenueRepo, VenueRepo>();
             services.AddSwaggerGen(c =>
@@ -41,7 +43,7 @@ namespace Ticket_Booking
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ticket_Booking", Version = "v1" });
             });
 
-            services.AddDbContext<ApplicationdbContext>(options => options.UseNpgsql("server=localhost; Port=5432; Database=Ticket_Booking; User Id=postgres; Password=postgres;")
+            services.AddDbContext<ApplicationdbContext>(options => options.UseNpgsql("server=localhost; Port=5433; Database=Ticket_Booking; User Id=postgres; Password=nimisha@03;")
             .UseSnakeCaseNamingConvention());
         }
 

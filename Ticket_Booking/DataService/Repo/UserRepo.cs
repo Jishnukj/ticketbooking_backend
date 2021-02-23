@@ -1,20 +1,20 @@
-﻿using DataService.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using DataService.Entities;
 
 namespace DataService.Repo
 {
     public class UserRepo : IUserRepo
     {
-
         private readonly ApplicationdbContext _applicationdbcontext;
         public UserRepo(ApplicationdbContext applicationdbContext)
         {
             _applicationdbcontext = applicationdbContext;
         }
-        
+
         public List<User> GetAllUsers()
         {
             return _applicationdbcontext.Users.ToList();
@@ -22,13 +22,13 @@ namespace DataService.Repo
 
         public User GetUserByEmail(string email)
         {
-            var user= _applicationdbcontext.Users.FirstOrDefault(p => p.email == email);
+            var user = _applicationdbcontext.Users.FirstOrDefault(p => p.email == email);
             return user;
         }
 
-        public User GetUserByName(string name)
+        public User GetUserById(int id)
         {
-            var user = _applicationdbcontext.Users.FirstOrDefault(p => p.user_name == name);
+            var user = _applicationdbcontext.Users.FirstOrDefault(p => p.user_id == id);
             return user;
         }
 
@@ -47,12 +47,26 @@ namespace DataService.Repo
             var emailExists = _applicationdbcontext.Users.FirstOrDefault(p => p.email == user.email);
             if (emailExists == null)
             {
-                return true;
+                return false;
             }
             else
             {
-                return false;
+                return true;
             }
         }
+        public bool AdminExists()
+        {
+            var adminExists = _applicationdbcontext.Users.FirstOrDefault(p => p.user_type.Equals("Admin"));
+            if (adminExists == null)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
     }
 }
+

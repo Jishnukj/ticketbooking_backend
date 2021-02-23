@@ -7,9 +7,11 @@ namespace DataService.Repo
 {
     public interface IUserRepo
     {
-        public List<User> GetAllUsers();
-        public User GetUserByEmail(string email);
-        public User GetUserByName(string name);
-        public  bool RegisterUser(User user);
+         List<User> GetAllUsers();
+         User GetUserByEmail(string email);
+         User GetUserById(int id);
+         bool RegisterUser(User user);
+         bool AdminExists();
+         bool CheckEmail(User user);
     }
 }
