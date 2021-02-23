@@ -9,8 +9,8 @@ namespace DataService.Repo
     {
         List<Comment> getAllComments();
         Comment getComment(int id);
-        Comment getCommentByUserId(int id);
-        Comment getCommentByEventId(int id);
-        bool add(Comment commentEntity);
+        List<Comment> getCommentByUserId(int id);
+        List<Comment> getCommentByEventId(int id);
+        bool addComment(Comment commentEntity);
     }
 }

@@ -14,7 +14,7 @@ namespace DataService.Repo
             _dbContext = dbContext;
         }
 
-        public bool add(Comment commentEntity)
+        public bool addComment(Comment commentEntity)
         {
             _dbContext.Comments.Add(commentEntity);
             _dbContext.SaveChanges();
@@ -27,15 +27,15 @@ namespace DataService.Repo
             return comment;
         }
 
-        public Comment getCommentByUserId(int id)
+        public List<Comment> getCommentByUserId(int id)
         {
-            Comment comment = _dbContext.Comments.Where(e => e.user_id == id).FirstOrDefault();
-            return comment;
+            return _dbContext.Comments.Where(e => e.user_id == id).ToList();
+           
         }
-        public Comment getCommentByEventId(int id)
+        public List<Comment> getCommentByEventId(int id)
         {
-            Comment comment = _dbContext.Comments.Where(e => e.event_id == id).FirstOrDefault();
-            return comment;
+            return _dbContext.Comments.Where(e => e.event_id == id).ToList();
+             
         }
 
         public List<Comment> getAllComments()

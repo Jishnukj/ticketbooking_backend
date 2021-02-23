@@ -1,4 +1,6 @@
+using BusinessService;
 using DataService;
+using DataService.Repo;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +32,8 @@ namespace Ticket_Booking
         {
 
             services.AddControllers();
+            services.AddScoped<ICommentService, CommentService>();
+            services.AddScoped<ICommentRepo, CommentRepo>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ticket_Booking", Version = "v1" });
