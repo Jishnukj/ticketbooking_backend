@@ -11,6 +11,8 @@ namespace BusinessService
         List<EventDto> GetEvents();
         List<EventDto> GetUpComingEvents();
         bool addEvent(Event events);
+        List<EventDto> GetEventById(int id);
+        List<EventDto> GetEventByDate(DateTime date);
 
     }
 }

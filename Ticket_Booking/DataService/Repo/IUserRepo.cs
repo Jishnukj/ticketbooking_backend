@@ -11,7 +11,6 @@ namespace DataService.Repo
          User GetUserByEmail(string email);
          User GetUserById(int id);
          bool RegisterUser(User user);
-         bool AdminExists();
          bool CheckEmail(User user);
     }
 }

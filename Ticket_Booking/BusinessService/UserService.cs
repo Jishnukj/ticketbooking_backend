@@ -22,11 +22,7 @@ namespace BusinessService
             {
                 if (user.user_type.Equals("Admin"))
                 {
-                    var adminExists = _userRepo.AdminExists();
-                    if (adminExists == false)
-                        return _userRepo.RegisterUser(user);
-                    else
-                        return false;
+                   return false;
                 }
                 return _userRepo.RegisterUser(user);
             }

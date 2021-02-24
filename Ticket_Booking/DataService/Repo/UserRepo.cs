@@ -54,18 +54,7 @@ namespace DataService.Repo
                 return true;
             }
         }
-        public bool AdminExists()
-        {
-            var adminExists = _applicationdbcontext.Users.FirstOrDefault(p => p.user_type.Equals("Admin"));
-            if (adminExists == null)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-        }
+      
 
     }
 }
