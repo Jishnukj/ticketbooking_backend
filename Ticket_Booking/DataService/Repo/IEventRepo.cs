@@ -9,6 +9,7 @@ namespace DataService.Repo
     {
         List<Event> getAllEvents();
         bool addEvent(Event events);
-        bool appoveEvent(int event_id, string appove);
+        bool appoveEvent(int event_id, string approve);
+        Event getEventbyId(int id);
     }
 }

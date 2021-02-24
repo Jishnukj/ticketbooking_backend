@@ -60,9 +60,9 @@ namespace Ticket_Booking.Controllers
             return p;
         }
         [HttpPost("appove")]
-        public IActionResult appoveEvent(int event_id, string appove)
+        public IActionResult appoveEvent(int event_id, string approve)
         {
-            var p = _eventService.appoveEvent(event_id, appove);
+            var p = _eventService.appoveEvent(event_id, approve);
             if (p == true)
             {
                 return Ok(p);

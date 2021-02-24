@@ -24,16 +24,20 @@ namespace DataService.Repo
             _dbContext.SaveChanges();
             return true;
         }
-        public bool appoveEvent(int event_id, string appove)
+        public bool appoveEvent(int event_id, string approve)
         {
             Event eventnew = _dbContext.Events.Where(x => x.event_id == event_id).FirstOrDefault();
             if (eventnew != null )
             {
-                eventnew.approval_status = appove;
+                eventnew.approval_status = approve;
                 _dbContext.SaveChanges();
                 return true;
             }
             return false;
+        }
+        public Event getEventbyId(int id)
+        {
+            return _dbContext.Events.Where(x => x.event_id == id).FirstOrDefault();
         }
     }
 }

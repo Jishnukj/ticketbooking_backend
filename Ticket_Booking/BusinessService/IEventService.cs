@@ -13,7 +13,7 @@ namespace BusinessService
         bool addEvent(Event events);
         List<EventDto> GetEventById(int id);
         List<EventDto> GetEventByDate(DateTime date);
-        bool appoveEvent(int event_id, string appove);
+        bool appoveEvent(int event_id, string approve);
         List<EventDto> GetApporedEvents();
 
     }
