@@ -139,7 +139,7 @@ namespace BusinessService
             return _eventRepository.addEvent(events);
             
         }
-        public bool appoveEvent(int event_id, bool appove)
+        public bool appoveEvent(int event_id, string appove)
         {
             return _eventRepository.appoveEvent(event_id, appove);
         }
@@ -151,7 +151,7 @@ namespace BusinessService
             var data2 = (from ev in events join ven in venue on ev.venue_id equals ven.venue_id select new { ev.event_id, ev.event_name, ev.event_date, ev.event_time, ev.venue_id, ev.available_seats, ev.artist_name, ev.description, ev.approval_status, ev.image, ven.venue_name, ven.total_seats, ven.ticket_rate }).ToList();
             var datefilter1 = data2.Where(s => s.event_date.Date >= DateTime.Now.Date);
             var data3 = datefilter1.OrderByDescending(s => s.event_date);
-            var data=data3.Where(x => x.approval_status == true);
+            var data=data3.Where(x => x.approval_status == "approve");
             return data.Select(a => new EventDto
             {
                 event_id = a.event_id,
