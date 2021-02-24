@@ -69,5 +69,10 @@ namespace Ticket_Booking.Controllers
             }
             return BadRequest("Invalid");
         }
+        [HttpGet("Approved/ApprovedUpcomingEvents")]
+        public IActionResult GetApporedEvents()
+        {
+            return Ok(_eventService.GetApporedEvents());
+        }
     }
 }
