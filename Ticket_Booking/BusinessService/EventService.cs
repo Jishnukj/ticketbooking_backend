@@ -140,5 +140,9 @@ namespace BusinessService
             return _eventRepository.addEvent(events);
             
         }
+        public bool appoveEvent(int event_id, bool appove)
+        {
+            return _eventRepository.appoveEvent(event_id, appove);
+        }
     }
 }

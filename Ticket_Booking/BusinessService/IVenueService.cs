@@ -11,6 +11,7 @@ namespace BusinessService
         bool Update(Venue venueChange, int id);
         Venue getVenuebyId(int id);
         List<Venue> getAllVenues();
+        List<Venue> getAvailable(DateTime date);
 
     }
 }

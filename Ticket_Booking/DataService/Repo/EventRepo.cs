@@ -24,5 +24,16 @@ namespace DataService.Repo
             _dbContext.SaveChanges();
             return true;
         }
+        public bool appoveEvent(int event_id, bool appove)
+        {
+            Event eventnew = _dbContext.Events.Where(x => x.event_id == event_id).FirstOrDefault();
+            if (eventnew != null)
+            {
+                eventnew.approval_status = appove;
+                _dbContext.SaveChanges();
+                return true;
+            }
+            return false;
+        }
     }
 }

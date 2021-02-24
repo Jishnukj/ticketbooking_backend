@@ -59,5 +59,15 @@ namespace Ticket_Booking.Controllers
             var p = _eventService.addEvent(events);
             return p;
         }
+        [HttpPost("appove")]
+        public IActionResult appoveEvent(int event_id, bool appove)
+        {
+            var p = _eventService.appoveEvent(event_id, appove);
+            if (p == true)
+            {
+                return Ok(p);
+            }
+            return BadRequest("Invalid");
+        }
     }
 }

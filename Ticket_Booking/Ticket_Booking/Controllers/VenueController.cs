@@ -24,6 +24,12 @@ namespace Ticket_Booking.Controllers
         {
             return Ok(_venueSerice.getAllVenues());
         }
+        [HttpGet]
+        [Route("availableVenues/{date}")]
+        public IActionResult getAvailableVenues(DateTime date)
+        {
+            return Ok(_venueSerice.getAvailable(date));
+        }
         [HttpGet("{id}")]
         public IActionResult GetVenueById(int id)
         {

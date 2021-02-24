@@ -10,9 +10,11 @@ namespace BusinessService
     public class VenueService : IVenueService
     {
         private readonly IVenueRepo _iVenueRepo;
-        public VenueService(IVenueRepo iVenueRepo)
+        private readonly IEventRepo _iEventRepo;
+        public VenueService(IVenueRepo iVenueRepo, IEventRepo iEventRepo)
         {
             _iVenueRepo = iVenueRepo;
+            _iEventRepo = iEventRepo;
         }
         public bool addVenue(Venue venue)
         {
@@ -45,6 +47,14 @@ namespace BusinessService
         public List<Venue> getAllVenues()
         {
             return _iVenueRepo.getAllVenues();
+        }
+        public List<Venue> getAvailable(DateTime date)
+        {
+            var venue = _iVenueRepo.getAllVenues();
+            var activity = _iEventRepo.getAllEvents().Where(x => x.event_date.Date == date.Date);
+            var data = (from ve in venue join act in activity on ve.venue_id equals act.venue_id select new { ve.venue_id, ve.venue_name, ve.total_seats, ve.ticket_rate }).ToList();
+            var venuefinal = (from p in venue where !data.Any(u => u.venue_id == p.venue_id) select p).ToList();
+            return venuefinal;
         }
 
     }
