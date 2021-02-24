@@ -70,3 +70,15 @@ C:\Users\MY PC\ticketbooking_backend\Ticket_Booking\DataService\obj\Debug\netcor
 C:\Users\MY PC\ticketbooking_backend\Ticket_Booking\DataService\obj\Debug\netcoreapp3.1\DataService.dll
 C:\Users\MY PC\ticketbooking_backend\Ticket_Booking\DataService\obj\Debug\netcoreapp3.1\DataService.pdb
 C:\Users\MY PC\ticketbooking_backend\Ticket_Booking\DataService\obj\Debug\netcoreapp3.1\DataService.genruntimeconfig.cache
+C:\Users\ancilla.philip\Desktop\Assignment2\ticketbooking_backend\Ticket_Booking\DataService\bin\Debug\netcoreapp3.1\DataService.deps.json
+C:\Users\ancilla.philip\Desktop\Assignment2\ticketbooking_backend\Ticket_Booking\DataService\bin\Debug\netcoreapp3.1\DataService.runtimeconfig.json
+C:\Users\ancilla.philip\Desktop\Assignment2\ticketbooking_backend\Ticket_Booking\DataService\bin\Debug\netcoreapp3.1\DataService.runtimeconfig.dev.json
+C:\Users\ancilla.philip\Desktop\Assignment2\ticketbooking_backend\Ticket_Booking\DataService\bin\Debug\netcoreapp3.1\DataService.dll
+C:\Users\ancilla.philip\Desktop\Assignment2\ticketbooking_backend\Ticket_Booking\DataService\bin\Debug\netcoreapp3.1\DataService.pdb
+C:\Users\ancilla.philip\Desktop\Assignment2\ticketbooking_backend\Ticket_Booking\DataService\obj\Debug\netcoreapp3.1\DataService.csprojAssemblyReference.cache
+C:\Users\ancilla.philip\Desktop\Assignment2\ticketbooking_backend\Ticket_Booking\DataService\obj\Debug\netcoreapp3.1\DataService.AssemblyInfoInputs.cache
+C:\Users\ancilla.philip\Desktop\Assignment2\ticketbooking_backend\Ticket_Booking\DataService\obj\Debug\netcoreapp3.1\DataService.AssemblyInfo.cs
+C:\Users\ancilla.philip\Desktop\Assignment2\ticketbooking_backend\Ticket_Booking\DataService\obj\Debug\netcoreapp3.1\DataService.csproj.CoreCompileInputs.cache
+C:\Users\ancilla.philip\Desktop\Assignment2\ticketbooking_backend\Ticket_Booking\DataService\obj\Debug\netcoreapp3.1\DataService.dll
+C:\Users\ancilla.philip\Desktop\Assignment2\ticketbooking_backend\Ticket_Booking\DataService\obj\Debug\netcoreapp3.1\DataService.pdb
+C:\Users\ancilla.philip\Desktop\Assignment2\ticketbooking_backend\Ticket_Booking\DataService\obj\Debug\netcoreapp3.1\DataService.genruntimeconfig.cache
