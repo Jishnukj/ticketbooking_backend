@@ -54,12 +54,14 @@ namespace Ticket_Booking.Controllers
         }
 
         [HttpPost("adding")]
+        //pass unchecked as approval_status
         public bool addEvent(Event events)
         {
             var p = _eventService.addEvent(events);
             return p;
         }
         [HttpPost("appove")]
+        //pass approve or reject as string
         public IActionResult appoveEvent(int event_id, string approve)
         {
             var p = _eventService.appoveEvent(event_id, approve);
