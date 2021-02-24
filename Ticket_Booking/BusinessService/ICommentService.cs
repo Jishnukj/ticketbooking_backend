@@ -12,5 +12,6 @@ namespace BusinessService
         List<Comment> GetCommentByUserId(int userid);
         List<Comment> GetCommentByEventId(int eventid);
         bool AddComment(Comment newActivity);
+        bool AddReply(int id,string reply);
     }
 }

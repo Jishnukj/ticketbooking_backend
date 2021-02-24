@@ -4288,19 +4288,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ancilla.philip\\.nuget\\packages\\": {}
+    "C:\\Users\\parvathy.vinu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ancilla.philip\\Desktop\\Assignment2\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\BusinessService.csproj",
+      "projectUniqueName": "C:\\Users\\parvathy.vinu\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\BusinessService.csproj",
       "projectName": "BusinessService",
-      "projectPath": "C:\\Users\\ancilla.philip\\Desktop\\Assignment2\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\BusinessService.csproj",
-      "packagesPath": "C:\\Users\\ancilla.philip\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ancilla.philip\\Desktop\\Assignment2\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\obj\\",
+      "projectPath": "C:\\Users\\parvathy.vinu\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\BusinessService.csproj",
+      "packagesPath": "C:\\Users\\parvathy.vinu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\parvathy.vinu\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ancilla.philip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\parvathy.vinu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4314,8 +4314,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\ancilla.philip\\Desktop\\Assignment2\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj": {
-              "projectPath": "C:\\Users\\ancilla.philip\\Desktop\\Assignment2\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj"
+            "C:\\Users\\parvathy.vinu\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj": {
+              "projectPath": "C:\\Users\\parvathy.vinu\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj"
             }
           }
         }

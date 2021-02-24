@@ -48,5 +48,18 @@ namespace BusinessService
            
             
         }
+
+        public bool AddReply(int id, string reply)
+        {
+            var t = _commentRepository.getComment(id);
+            if(t != null)
+            {
+                return _commentRepository.addReply(id, reply);
+                return true;
+            }
+
+            return false;
+
+        }
     }
 }

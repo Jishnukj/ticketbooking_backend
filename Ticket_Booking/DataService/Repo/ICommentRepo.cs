@@ -12,5 +12,6 @@ namespace DataService.Repo
         List<Comment> getCommentByUserId(int id);
         List<Comment> getCommentByEventId(int id);
         bool addComment(Comment commentEntity);
+        bool addReply(int id,string reply);
     }
 }

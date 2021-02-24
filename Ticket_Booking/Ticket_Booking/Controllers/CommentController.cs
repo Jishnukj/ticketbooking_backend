@@ -67,5 +67,13 @@ namespace Ticket_Booking.Controllers
             return p;
             
         }
+
+        [HttpPost("Reply")]
+        public bool AddReply(int id,string reply)
+        {
+            var p = _commentService.AddReply(id,reply);
+            return p;
+
+        }
     }
 }

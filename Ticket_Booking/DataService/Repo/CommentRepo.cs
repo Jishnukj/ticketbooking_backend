@@ -42,5 +42,17 @@ namespace DataService.Repo
         {
             return _dbContext.Comments.ToList();
         }
+
+        public bool addReply(int id, string reply)
+        {
+            Comment comment = _dbContext.Comments.Where(x => x.comment_id == id).FirstOrDefault();
+            if(comment!=null)
+            {
+                comment.reply = reply;
+                _dbContext.SaveChanges();
+                return true;
+            }
+            return false;
+        }
     }
 }
