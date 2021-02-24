@@ -27,14 +27,11 @@ namespace Ticket_Booking.Controllers
             else
                 return NotFound($"Booking with id {id} was not found.");
         }
-        [HttpPost]
-        public IActionResult addBooking(Booking booking)
+        [HttpPost("booking")]
+        public bool addBooking(Booking booking)
         {
             var p = _bookingService.addBooking(booking);
-            if (p == true)
-                return Ok(true);
-            else
-                return BadRequest("Booking aldeady exist.");
+            return p;
         }
     }
 }

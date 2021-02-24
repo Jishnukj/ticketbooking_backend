@@ -137,8 +137,8 @@ namespace BusinessService
 
         public bool addEvent(Event events)
         {
-            _eventRepository.addEvent(events);
-            return true;
+            return _eventRepository.addEvent(events);
+            
         }
     }
 }

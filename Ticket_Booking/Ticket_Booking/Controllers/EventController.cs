@@ -1,4 +1,5 @@
 ﻿using BusinessService;
+using DataService.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -52,10 +53,11 @@ namespace Ticket_Booking.Controllers
             return NotFound($"Event on Date: {date} not found");
         }
 
-        [HttpPost]
-        public IActionResult addEvent()
+        [HttpPost("adding")]
+        public bool addEvent(Event events)
         {
-            return Ok(true);
+            var p = _eventService.addEvent(events);
+            return p;
         }
     }
 }

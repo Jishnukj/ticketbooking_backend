@@ -16,15 +16,9 @@ namespace BuisnessService
 
         public bool addBooking(Booking booking)
         {
-            bool aldreadyBooked = _ibookingRepo.checkUserIdEventId(booking);
-            if (aldreadyBooked == false)
-            {
-                return _ibookingRepo.addBooking(booking);
-            }
-            else
-            {
-                return false;
-            }
+            
+            return _ibookingRepo.addBooking(booking);
+            
         }
         public Booking getBookingbyId(int id)
         {
