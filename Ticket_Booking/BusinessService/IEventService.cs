@@ -9,6 +9,7 @@ namespace BusinessService
     public interface IEventService
     {
         List<EventDto> GetEvents();
+        List<EventDto> GetUpComingEvents();
         bool addEvent(Event events);
 
     }

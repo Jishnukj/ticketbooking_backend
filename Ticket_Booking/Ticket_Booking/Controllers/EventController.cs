@@ -23,6 +23,13 @@ namespace Ticket_Booking.Controllers
         {
             return Ok(_eventService.GetEvents());
         }
+
+        [HttpGet("UpcomingEvents")]
+        public IActionResult GetUpComingEvents()
+        {
+            return Ok(_eventService.GetUpComingEvents());
+        }
+
         [HttpPost]
         public IActionResult addEvent()
         {
