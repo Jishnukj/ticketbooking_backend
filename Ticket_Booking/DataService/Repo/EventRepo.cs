@@ -18,5 +18,11 @@ namespace DataService.Repo
         {
             return _dbContext.Events.ToList();
         }
+        public bool addEvent(Event events)
+        {
+            _dbContext.Events.Add(events);
+            _dbContext.SaveChanges();
+            return true;
+        }
     }
 }

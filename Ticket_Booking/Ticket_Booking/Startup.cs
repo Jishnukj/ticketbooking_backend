@@ -1,3 +1,4 @@
+using BuisnessService;
 using BusinessService;
 using DataService;
 using DataService.Repo;
@@ -40,6 +41,8 @@ namespace Ticket_Booking
             services.AddScoped<IVenueRepo, VenueRepo>();
             services.AddScoped<IEventService, EventService>();
             services.AddScoped<IEventRepo, EventRepo>();
+            services.AddScoped<IBookingService, BookingService>();
+            services.AddScoped<IBookingRepo, BookingRepo>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ticket_Booking", Version = "v1" });

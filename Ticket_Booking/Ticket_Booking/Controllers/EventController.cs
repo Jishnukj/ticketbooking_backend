@@ -23,5 +23,10 @@ namespace Ticket_Booking.Controllers
         {
             return Ok(_eventService.GetEvents());
         }
+        [HttpPost]
+        public IActionResult addEvent()
+        {
+            return Ok(true);
+        }
     }
 }

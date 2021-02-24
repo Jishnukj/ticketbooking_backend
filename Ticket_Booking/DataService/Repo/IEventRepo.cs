@@ -8,5 +8,6 @@ namespace DataService.Repo
     public interface IEventRepo
     {
         List<Event> getAllEvents();
+        bool addEvent(Event events);
     }
 }

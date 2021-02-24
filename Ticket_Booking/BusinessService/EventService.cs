@@ -47,5 +47,10 @@ namespace BusinessService
             }).ToList();
         
         }
+        public bool addEvent(Event events)
+        {
+            _eventRepository.addEvent(events);
+            return true;
+        }
     }
 }
