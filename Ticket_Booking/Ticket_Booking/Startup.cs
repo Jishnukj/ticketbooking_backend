@@ -43,6 +43,16 @@ namespace Ticket_Booking
             services.AddScoped<IEventRepo, EventRepo>();
             services.AddScoped<IBookingService, BookingService>();
             services.AddScoped<IBookingRepo, BookingRepo>();
+            services.AddCors(options =>
+            {
+
+                var origins = "http://localhost:4200";
+                options.AddPolicy("CorsPolicy", builder => builder
+                .WithOrigins(origins)
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials());
+            });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ticket_Booking", Version = "v1" });
@@ -65,6 +75,8 @@ namespace Ticket_Booking
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors("CorsPolicy");
 
             app.UseAuthorization();
 
