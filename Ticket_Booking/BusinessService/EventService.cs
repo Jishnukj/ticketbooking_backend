@@ -139,12 +139,12 @@ namespace BusinessService
             return _eventRepository.addEvent(events);
             
         }
-        public bool appoveEvent(int event_id, string approve)
+        public bool approveEvent(int event_id, string approve)
         {
             var p = _eventRepository.getEventbyId(event_id);
             if (p.approval_status != "approve")
             {
-                _eventRepository.appoveEvent(event_id, approve);
+                _eventRepository.approveEvent(event_id, approve);
                 return true;
             }
             return false;

@@ -63,11 +63,11 @@ namespace Ticket_Booking.Controllers
             return p;
         }
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpPost("appove")]
+        [HttpPost("approve")]
         //pass approve or reject as string
-        public IActionResult appoveEvent(int event_id, string approve)
+        public IActionResult approveEvent(int event_id, string approve)
         {
-            var p = _eventService.appoveEvent(event_id, approve);
+            var p = _eventService.approveEvent(event_id, approve);
             if (p == true)
             {
                 return Ok(p);

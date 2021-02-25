@@ -39,7 +39,7 @@ namespace Ticket_Booking.Controllers
             {
                 return Ok(p);
             }
-            return BadRequest("Same person already booked");
+            return BadRequest("Already booked or tickets are not available");
         }
 
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
