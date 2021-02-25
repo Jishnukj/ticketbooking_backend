@@ -54,7 +54,7 @@ namespace Ticket_Booking.Controllers
             }
             return NotFound($"Event on Date: {date} not found");
         }
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin,artist")]
         [HttpPost("adding")]
         //pass unchecked as approval_status
         public bool addEvent(Event events)
@@ -62,7 +62,7 @@ namespace Ticket_Booking.Controllers
             var p = _eventService.addEvent(events);
             return p;
         }
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin")]
         [HttpPost("approve")]
         //pass approve or reject as string
         public IActionResult approveEvent(int event_id, string approve)
@@ -74,7 +74,7 @@ namespace Ticket_Booking.Controllers
             }
             return BadRequest("Invalid");
         }
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin,artist,user")]
         [HttpGet("Approved/ApprovedUpcomingEvents")]
         public IActionResult GetApporedEvents()
         {

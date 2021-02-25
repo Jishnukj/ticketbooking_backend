@@ -20,15 +20,14 @@ namespace Ticket_Booking.Controllers
         {
             _venueSerice = venueService;
         }
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin,artist,user")]
         [HttpGet]
         [Route("allVenues")]
-   
         public IActionResult getAllVenues()
         {
             return Ok(_venueSerice.getAllVenues());
         }
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin,artist,user")]
         [HttpGet]
         [Route("availableVenues/{date}")]
 
@@ -36,7 +35,7 @@ namespace Ticket_Booking.Controllers
         {
             return Ok(_venueSerice.getAvailable(date));
         }
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin,artist")]
         [HttpGet("{id}")]
         public IActionResult GetVenueById(int id)
         {
@@ -48,7 +47,7 @@ namespace Ticket_Booking.Controllers
             }
             return NotFound($"Activity with Id: {id} was not found");
         }
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin")]
         [HttpPost]
         public IActionResult addVenue(Venue venue)
         {
@@ -62,7 +61,7 @@ namespace Ticket_Booking.Controllers
                 return BadRequest("Venue already exist");
             }
         }
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin")]
         [HttpPatch]
         public IActionResult updateVenue(Venue venue, int id)
         {

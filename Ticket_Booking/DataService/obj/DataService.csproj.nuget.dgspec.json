@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jishnu.kj\\Documents\\forgit\\thu\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj": {}
+    "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwtfinal\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jishnu.kj\\Documents\\forgit\\thu\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj": {
+    "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwtfinal\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jishnu.kj\\Documents\\forgit\\thu\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj",
+        "projectUniqueName": "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwtfinal\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj",
         "projectName": "DataService",
-        "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\thu\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj",
+        "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwtfinal\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj",
         "packagesPath": "C:\\Users\\jishnu.kj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\thu\\ticketbooking_backend\\Ticket_Booking\\DataService\\obj\\",
+        "outputPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwtfinal\\ticketbooking_backend\\Ticket_Booking\\DataService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jishnu.kj\\AppData\\Roaming\\NuGet\\NuGet.Config",

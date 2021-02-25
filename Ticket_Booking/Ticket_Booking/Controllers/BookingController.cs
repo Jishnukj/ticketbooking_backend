@@ -20,7 +20,7 @@ namespace Ticket_Booking.Controllers
         {
             _bookingService = bookingService;
         }
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin,artist,user")]
         [HttpGet("{id}")]
         public IActionResult getBookingbyId(int id)
         {
@@ -30,7 +30,7 @@ namespace Ticket_Booking.Controllers
             else
                 return NotFound($"Booking with id {id} was not found.");
         }
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin,artist,user")]
         [HttpPost("booking")]
         public IActionResult addBooking(Booking booking)
         {
@@ -42,7 +42,7 @@ namespace Ticket_Booking.Controllers
             return BadRequest("Already booked or tickets are not available");
         }
 
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin,artist,user")]
         [HttpGet("allbooking")]
         public IActionResult getAllbooking()
         {
