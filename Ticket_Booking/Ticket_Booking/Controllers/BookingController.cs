@@ -41,5 +41,12 @@ namespace Ticket_Booking.Controllers
             }
             return BadRequest("Same person already booked");
         }
+
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [HttpGet("allbooking")]
+        public IActionResult getAllbooking()
+        {
+            return Ok(_bookingService.getAllbookings());
+        }
     }
 }

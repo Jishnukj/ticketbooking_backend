@@ -35,7 +35,10 @@ namespace BuisnessService
             var booking = _ibookingRepo.getBookingbyId(id);
             return booking;
         }
-       
+        public List<Booking> getAllbookings()
+        {
+            return _ibookingRepo.getAllbookings();
+        }
 
 
     }
