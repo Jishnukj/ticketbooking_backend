@@ -9,6 +9,5 @@ namespace BuisnessService
     {
         bool addBooking(Booking booking);
         Booking getBookingbyId(int id);
-        List<Booking> getAllBookings();
     }
 }

@@ -883,19 +883,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ancilla.philip\\.nuget\\packages\\": {}
+    "C:\\Users\\jishnu.kj\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ancilla.philip\\Desktop\\New\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj",
+      "projectUniqueName": "C:\\Users\\jishnu.kj\\Documents\\forgit\\thu\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj",
       "projectName": "DataService",
-      "projectPath": "C:\\Users\\ancilla.philip\\Desktop\\New\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj",
-      "packagesPath": "C:\\Users\\ancilla.philip\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ancilla.philip\\Desktop\\New\\ticketbooking_backend\\Ticket_Booking\\DataService\\obj\\",
+      "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\thu\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj",
+      "packagesPath": "C:\\Users\\jishnu.kj\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\thu\\ticketbooking_backend\\Ticket_Booking\\DataService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ancilla.philip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jishnu.kj\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

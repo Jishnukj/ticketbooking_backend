@@ -17,7 +17,7 @@ namespace BuisnessService
 
         public bool addBooking(Booking booking)
         {
-            var data = _ibookingRepo.getAllBookings();
+            var data = _ibookingRepo.getAllbookings();
             int Total = data.Where(x => x.user_id == booking.user_id && x.event_id==booking.event_id).Count();
             if (Total == 0)
             {
@@ -35,11 +35,7 @@ namespace BuisnessService
             var booking = _ibookingRepo.getBookingbyId(id);
             return booking;
         }
-        public List<Booking> getAllBookings()
-        {
-            return _ibookingRepo.getAllBookings();
-        }
-
+       
 
 
     }

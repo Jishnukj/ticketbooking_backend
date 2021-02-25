@@ -2,6 +2,7 @@
 using DataService.Repo;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace BusinessService
@@ -69,6 +70,21 @@ namespace BusinessService
         public List<User> GetAllUsers()
         {
             return _userRepo.GetAllUsers();
+        }
+
+        public string checkAdmin(string email, string password)
+        {
+            var p = _userRepo.GetAllUsers();
+            var data = p.Where(p => p.email == email && p.password == password).FirstOrDefault();
+            if (data != null)
+            {
+                if (data.user_type == "admin" || data.user_type == "artist" || data.user_type == "user")
+                {
+                    return data.user_type;
+                }
+                else return "invalid_user";
+            }
+            else return "invalid_user";
         }
     }
 }

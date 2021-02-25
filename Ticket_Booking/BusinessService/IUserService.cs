@@ -12,5 +12,6 @@ namespace BusinessService
         User GetUserById(int id);
         List<User> GetAllUsers();
         bool RegisterAdmin(User user);
+        string checkAdmin(string email, string password);
     }
 }

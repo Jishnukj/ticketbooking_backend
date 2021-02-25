@@ -25,7 +25,7 @@ namespace DataService.Repo
             _dbContext.SaveChanges();
             return true;
         }
-        public List<Booking> getAllBookings()
+        public List<Booking> getAllbookings()
         {
             return _dbContext.Bookings.ToList();
         }

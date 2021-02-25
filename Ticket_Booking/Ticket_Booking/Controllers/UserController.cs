@@ -5,8 +5,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace Ticket_Booking.Controllers
 {
@@ -21,6 +25,7 @@ namespace Ticket_Booking.Controllers
         }
 
         // GET: api/<UserController>
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         public IActionResult GetAllUsers()
         {
@@ -28,6 +33,7 @@ namespace Ticket_Booking.Controllers
         }
 
         // GET api/<UserController>/5
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet("{id}")]
         public IActionResult GetUser(int id)
         {
@@ -40,6 +46,7 @@ namespace Ticket_Booking.Controllers
         }
 
         // POST api/<UserController>
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost("register/User")]
         public bool Post([FromBody] User user)
         {
@@ -47,11 +54,39 @@ namespace Ticket_Booking.Controllers
             return userRegistered;
         }
 
-        [HttpPost("login/User")]
-        public bool Post(string email, string password)
+        //[HttpPost("login/User")]
+        //public bool Post(string email, string password)
+        //{
+        //    var userRegistered = _userService.LoginUser(email, password);
+        //    return userRegistered;
+        //}
+
+        [HttpPost("login")]
+        public async Task<IActionResult> checkadmin(string email,string password)
         {
-            var userRegistered = _userService.LoginUser(email, password);
-            return userRegistered;
+            var usertype = _userService.checkAdmin(email, password);
+            if (usertype == "admin" || usertype == "artist" || usertype == "user")
+            {
+                var tokenDescriptor = new SecurityTokenDescriptor
+                {
+                    Subject = new ClaimsIdentity(new Claim[]
+                    {
+                        new Claim("email",email.ToString())
+                    }),
+                    Expires = DateTime.UtcNow.AddHours(5),
+                    SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(
+                        Encoding.UTF8.GetBytes("123433231324354343434")), SecurityAlgorithms.HmacSha256Signature)
+                };
+                var tokenHandler = new JwtSecurityTokenHandler();
+                var securityToken = tokenHandler.CreateToken(tokenDescriptor);
+                var token = tokenHandler.WriteToken(securityToken);
+                return Ok(new { token , usertype });
+            }
+            else
+            {
+                return BadRequest(new { message = "invalid" });
+            }
+
         }
 
 

@@ -1,5 +1,7 @@
 ﻿using BusinessService;
 using DataService.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -18,12 +20,13 @@ namespace Ticket_Booking.Controllers
         {
             _commentService = commentService;
         }
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         public IActionResult GetComments()
         {
             return Ok(_commentService.GetComments());
         }
-
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet("Comment/{id}")]
         public IActionResult GetComment(int id)
         {
@@ -35,7 +38,7 @@ namespace Ticket_Booking.Controllers
             }
             return NotFound($"Comment with Id: {id} was not found");
         }
-
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet("User/{id}")]
         public IActionResult GetCommentByUserId(int id)
         {
@@ -47,7 +50,7 @@ namespace Ticket_Booking.Controllers
             }
             return NotFound($"User with Id: {id} was not found");
         }
-
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet("Event/{id}")]
         public IActionResult GetCommentByEventId(int id)
         {
@@ -59,7 +62,7 @@ namespace Ticket_Booking.Controllers
             }
             return NotFound($"Event with Id: {id} was not found");
         }
-
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost("adding")]
         public bool AddComment(Comment comment)
         {
@@ -67,7 +70,7 @@ namespace Ticket_Booking.Controllers
             return p;
             
         }
-
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost("Reply")]
         public bool AddReply(int id,string reply)
         {

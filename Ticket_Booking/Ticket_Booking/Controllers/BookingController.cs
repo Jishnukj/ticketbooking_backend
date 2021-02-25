@@ -1,5 +1,7 @@
 ﻿using BuisnessService;
 using DataService.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -18,6 +20,7 @@ namespace Ticket_Booking.Controllers
         {
             _bookingService = bookingService;
         }
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet("{id}")]
         public IActionResult getBookingbyId(int id)
         {
@@ -27,6 +30,7 @@ namespace Ticket_Booking.Controllers
             else
                 return NotFound($"Booking with id {id} was not found.");
         }
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost("booking")]
         public IActionResult addBooking(Booking booking)
         {
@@ -36,11 +40,6 @@ namespace Ticket_Booking.Controllers
                 return Ok(p);
             }
             return BadRequest("Same person already booked");
-        }
-        [HttpGet("allBookings")]
-        public IActionResult getAllBookings()
-        {
-            return Ok(_bookingService.getAllBookings());
         }
     }
 }

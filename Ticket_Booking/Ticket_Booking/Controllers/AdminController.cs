@@ -1,5 +1,7 @@
 ﻿using BusinessService;
 using DataService.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -34,6 +36,7 @@ namespace Ticket_Booking.Controllers
         //}
 
         // POST api/<AdminController>
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost("register/admin")]
         public bool Post([FromBody] User user)
         {

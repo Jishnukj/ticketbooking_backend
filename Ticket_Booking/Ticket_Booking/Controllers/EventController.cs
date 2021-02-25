@@ -1,5 +1,7 @@
 ﻿using BusinessService;
 using DataService.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -52,7 +54,7 @@ namespace Ticket_Booking.Controllers
             }
             return NotFound($"Event on Date: {date} not found");
         }
-
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost("adding")]
         //pass unchecked as approval_status
         public bool addEvent(Event events)
@@ -60,6 +62,7 @@ namespace Ticket_Booking.Controllers
             var p = _eventService.addEvent(events);
             return p;
         }
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost("appove")]
         //pass approve or reject as string
         public IActionResult appoveEvent(int event_id, string approve)
@@ -71,6 +74,7 @@ namespace Ticket_Booking.Controllers
             }
             return BadRequest("Invalid");
         }
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet("Approved/ApprovedUpcomingEvents")]
         public IActionResult GetApporedEvents()
         {
