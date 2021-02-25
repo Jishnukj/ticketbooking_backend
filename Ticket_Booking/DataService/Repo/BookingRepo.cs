@@ -21,6 +21,8 @@ namespace DataService.Repo
         }
         public bool addBooking(Booking booking)
         {
+            var data=_dbContext.Events.Where(e => e.event_id == booking.event_id).FirstOrDefault();
+            data.available_seats -= booking.No_of_tickets;
             _dbContext.Bookings.Add(booking);
             _dbContext.SaveChanges();
             return true;

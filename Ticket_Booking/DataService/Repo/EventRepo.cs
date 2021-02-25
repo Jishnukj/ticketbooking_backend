@@ -24,7 +24,7 @@ namespace DataService.Repo
             _dbContext.SaveChanges();
             return true;
         }
-        public bool appoveEvent(int event_id, string approve)
+        public bool approveEvent(int event_id, string approve)
         {
             Event eventnew = _dbContext.Events.Where(x => x.event_id == event_id).FirstOrDefault();
             if (eventnew != null )
