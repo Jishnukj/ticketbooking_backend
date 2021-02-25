@@ -25,17 +25,9 @@ namespace DataService.Repo
             _dbContext.SaveChanges();
             return true;
         }
-        public bool checkUserIdEventId(Booking booking)
+        public List<Booking> getAllbookings()
         {
-            var bookingExist = _dbContext.Bookings.FirstOrDefault(p => p.user_id == booking.user_id && p.event_id == booking.event_id);
-            if (bookingExist == null)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return _dbContext.Bookings.ToList();
         }
     }
 

@@ -28,10 +28,14 @@ namespace Ticket_Booking.Controllers
                 return NotFound($"Booking with id {id} was not found.");
         }
         [HttpPost("booking")]
-        public bool addBooking(Booking booking)
+        public IActionResult addBooking(Booking booking)
         {
             var p = _bookingService.addBooking(booking);
-            return p;
+            if (p == true)
+            {
+                return Ok(p);
+            }
+            return BadRequest("Same person already booked");
         }
     }
 }
