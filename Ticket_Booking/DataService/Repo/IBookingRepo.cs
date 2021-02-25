@@ -10,7 +10,7 @@ namespace DataService.Repo
 	{
 		Booking getBookingbyId(int id);
 		bool addBooking(Booking booking);
-		List<Booking> getAllbookings();
+		List<Booking> getAllBookings();
 	}
 
 }

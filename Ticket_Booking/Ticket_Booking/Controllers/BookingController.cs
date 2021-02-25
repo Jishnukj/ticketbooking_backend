@@ -37,5 +37,10 @@ namespace Ticket_Booking.Controllers
             }
             return BadRequest("Same person already booked");
         }
+        [HttpGet("allBookings")]
+        public IActionResult getAllBookings()
+        {
+            return Ok(_bookingService.getAllBookings());
+        }
     }
 }
