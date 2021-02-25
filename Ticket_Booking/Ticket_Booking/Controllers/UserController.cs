@@ -25,7 +25,7 @@ namespace Ticket_Booking.Controllers
         }
 
         // GET: api/<UserController>
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin,artist")]
         [HttpGet]
         public IActionResult GetAllUsers()
         {
@@ -33,7 +33,7 @@ namespace Ticket_Booking.Controllers
         }
 
         // GET api/<UserController>/5
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin,artist")]
         [HttpGet("{id}")]
         public IActionResult GetUser(int id)
         {
@@ -46,7 +46,7 @@ namespace Ticket_Booking.Controllers
         }
 
         // POST api/<UserController>
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin,artist,user")]
         [HttpPost("register/User")]
         public bool Post([FromBody] User user)
         {
@@ -71,7 +71,8 @@ namespace Ticket_Booking.Controllers
                 {
                     Subject = new ClaimsIdentity(new Claim[]
                     {
-                        new Claim("email",email.ToString())
+                        new Claim("email",email.ToString()),
+                        new Claim(ClaimTypes.Role, usertype)
                     }),
                     Expires = DateTime.UtcNow.AddHours(5),
                     SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(

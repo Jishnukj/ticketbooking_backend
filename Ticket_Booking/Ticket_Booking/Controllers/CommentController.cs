@@ -20,13 +20,13 @@ namespace Ticket_Booking.Controllers
         {
             _commentService = commentService;
         }
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin,artist,user")]
         [HttpGet]
         public IActionResult GetComments()
         {
             return Ok(_commentService.GetComments());
         }
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin,artist,user")]
         [HttpGet("Comment/{id}")]
         public IActionResult GetComment(int id)
         {
@@ -38,7 +38,7 @@ namespace Ticket_Booking.Controllers
             }
             return NotFound($"Comment with Id: {id} was not found");
         }
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin,artist,user")]
         [HttpGet("User/{id}")]
         public IActionResult GetCommentByUserId(int id)
         {
@@ -50,7 +50,7 @@ namespace Ticket_Booking.Controllers
             }
             return NotFound($"User with Id: {id} was not found");
         }
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin,artist,user")]
         [HttpGet("Event/{id}")]
         public IActionResult GetCommentByEventId(int id)
         {
@@ -62,7 +62,7 @@ namespace Ticket_Booking.Controllers
             }
             return NotFound($"Event with Id: {id} was not found");
         }
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin,artist,user")]
         [HttpPost("adding")]
         public bool AddComment(Comment comment)
         {
@@ -70,7 +70,7 @@ namespace Ticket_Booking.Controllers
             return p;
             
         }
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin,artist,user")]
         [HttpPost("Reply")]
         public bool AddReply(int id,string reply)
         {
