@@ -41,21 +41,7 @@ namespace DataService.Repo
             return true;
 
         }
-
-        public bool CheckEmail(User user)
-        {
-            var emailExists = _applicationdbcontext.Users.FirstOrDefault(p => p.email == user.email);
-            if (emailExists == null)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-        }
       
-
     }
 }
 

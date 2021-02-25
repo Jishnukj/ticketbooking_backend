@@ -42,7 +42,7 @@ namespace Ticket_Booking.Controllers
             return NotFound($"Event with Id: {id} not found");
         }
 
-        [HttpGet("Event/{date}")]
+        [HttpGet("EventByDate/{date}")]
         public IActionResult GetEventByDate(DateTime date)
         {
             var user = _eventService.GetEventByDate(date);

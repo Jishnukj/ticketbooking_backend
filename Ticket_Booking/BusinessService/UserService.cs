@@ -16,9 +16,9 @@ namespace BusinessService
 
         public bool RegisterUser(User user)
         {
-            var emailAlreadyExists = _userRepo.CheckEmail(user);
+            var emailAlreadyExists = _userRepo.GetUserByEmail(user.email);
 
-            if (emailAlreadyExists == false)
+            if (emailAlreadyExists == null)
             {
                 if (user.user_type.Equals("Admin"))
                 {
@@ -34,9 +34,9 @@ namespace BusinessService
 
         public bool RegisterAdmin(User user)
         {
-            var emailAlreadyExists = _userRepo.CheckEmail(user);
+            var emailAlreadyExists = _userRepo.GetUserByEmail(user.email);
 
-            if (emailAlreadyExists == false)
+            if (emailAlreadyExists == null)
             {
                 return _userRepo.RegisterUser(user);
             }

@@ -111,7 +111,7 @@ namespace BusinessService
 
 
 
-            var data = (from ev in events join ven in venue on ev.venue_id equals ven.venue_id where ev.event_date == date select new { ev.event_id, ev.event_name, ev.event_date, ev.event_time, ev.venue_id, ev.available_seats, ev.artist_name, ev.description, ev.approval_status, ev.image, ven.venue_name, ven.total_seats, ven.ticket_rate }).ToList();
+            var data = (from ev in events join ven in venue on ev.venue_id equals ven.venue_id where ev.event_date.Date == date.Date select new { ev.event_id, ev.event_name, ev.event_date, ev.event_time, ev.venue_id, ev.available_seats, ev.artist_name, ev.description, ev.approval_status, ev.image, ven.venue_name, ven.total_seats, ven.ticket_rate }).ToList();
             return data.Select(a => new EventDto
             {
                 event_id = a.event_id,

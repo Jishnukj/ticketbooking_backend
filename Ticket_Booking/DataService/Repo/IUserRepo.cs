@@ -10,7 +10,6 @@ namespace DataService.Repo
          List<User> GetAllUsers();
          User GetUserByEmail(string email);
          User GetUserById(int id);
-         bool RegisterUser(User user);
-         bool CheckEmail(User user);
+         bool RegisterUser(User user);    
     }
 }
