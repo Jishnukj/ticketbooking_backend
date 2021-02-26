@@ -33,6 +33,18 @@ namespace Ticket_Booking.Controllers
             return Ok(_eventService.GetUpComingEvents());
         }
 
+        [HttpGet("GetUpComingApprovedEvents")]
+        public IActionResult GetUpComingApprovedEvents()
+        {
+            return Ok(_eventService.GetUpComingApprovedEvents());
+        }
+
+        [HttpGet("GetUpComingNotConfirmedEvents")]
+        public IActionResult GetUpComingNotConfirmedEvents()
+        {
+            return Ok(_eventService.GetUpComingNotConfirmedEvents());
+        }
+
         [HttpGet("{id}")]
         public IActionResult GetEventById(int id)
         {
