@@ -46,7 +46,7 @@ namespace Ticket_Booking.Controllers
         }
 
         // POST api/<UserController>
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin,artist,user")]
+
         [HttpPost("register/User")]
         public bool Post([FromBody] User user)
         {
