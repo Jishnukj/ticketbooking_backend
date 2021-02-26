@@ -15,6 +15,8 @@ namespace BusinessService
         List<EventDto> GetEventByDate(DateTime date);
         bool approveEvent(int event_id, string approve);
         List<EventDto> GetApporedEvents();
+        List<EventDto> GetUpComingApprovedEvents();
+        List<EventDto> GetUpComingNotConfirmedEvents();
 
     }
 }
