@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using BusinessService.Dto;
 using DataService.Entities;
 
 namespace BuisnessService
@@ -9,6 +10,6 @@ namespace BuisnessService
     {
         bool addBooking(Booking booking);
         Booking getBookingbyId(int id);
-        List<Booking> getAllbookings();
+        List<BookingDto> getAllbookings();
     }
 }
