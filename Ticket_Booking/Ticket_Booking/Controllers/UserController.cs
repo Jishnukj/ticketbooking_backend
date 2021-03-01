@@ -64,24 +64,35 @@ namespace Ticket_Booking.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> checkadmin(string email,string password)
         {
-            var usertype = _userService.checkAdmin(email, password);
-            if (usertype == "admin" || usertype == "artist" || usertype == "user")
+           
+            var user = _userService.checkAdmin(email, password);
+            if (user != null)
             {
-                var tokenDescriptor = new SecurityTokenDescriptor
+                var usertype = user.user_type;
+                var userid = user.user_id;
+                var username = user.user_name;
+                if (usertype == "admin" || usertype == "artist" || usertype == "user")
                 {
-                    Subject = new ClaimsIdentity(new Claim[]
+                    var tokenDescriptor = new SecurityTokenDescriptor
                     {
+                        Subject = new ClaimsIdentity(new Claim[]
+                        {
                         new Claim("email",email.ToString()),
                         new Claim(ClaimTypes.Role, usertype)
-                    }),
-                    Expires = DateTime.UtcNow.AddHours(5),
-                    SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(
-                        Encoding.UTF8.GetBytes("123433231324354343434")), SecurityAlgorithms.HmacSha256Signature)
-                };
-                var tokenHandler = new JwtSecurityTokenHandler();
-                var securityToken = tokenHandler.CreateToken(tokenDescriptor);
-                var token = tokenHandler.WriteToken(securityToken);
-                return Ok(new { token , usertype });
+                        }),
+                        Expires = DateTime.UtcNow.AddHours(5),
+                        SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(
+                            Encoding.UTF8.GetBytes("123433231324354343434")), SecurityAlgorithms.HmacSha256Signature)
+                    };
+                    var tokenHandler = new JwtSecurityTokenHandler();
+                    var securityToken = tokenHandler.CreateToken(tokenDescriptor);
+                    var token = tokenHandler.WriteToken(securityToken);
+                    return Ok(new { token, usertype, userid, username });
+                }
+                else
+                {
+                    return BadRequest(new { message = "invalid" });
+                }
             }
             else
             {

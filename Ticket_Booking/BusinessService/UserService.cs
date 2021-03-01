@@ -72,7 +72,7 @@ namespace BusinessService
             return _userRepo.GetAllUsers();
         }
 
-        public string checkAdmin(string email, string password)
+        public User checkAdmin(string email, string password)
         {
             var p = _userRepo.GetAllUsers();
             var data = p.Where(p => p.email == email && p.password == password).FirstOrDefault();
@@ -80,11 +80,11 @@ namespace BusinessService
             {
                 if (data.user_type == "admin" || data.user_type == "artist" || data.user_type == "user")
                 {
-                    return data.user_type;
+                    return data;
                 }
-                else return "invalid_user";
+                else return null;
             }
-            else return "invalid_user";
+            else return null;
         }
     }
 }
