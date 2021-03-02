@@ -21,38 +21,13 @@ namespace Ticket_Booking.Controllers
         {
             _userService = userService;
         }
-        //// GET: api/<AdminController>
-        //[HttpGet]
-        //public IEnumerable<string> Get()
-        //{
-        //    return new string[] { "value1", "value2" };
-        //}
-
-        //// GET api/<AdminController>/5
-        //[HttpGet("{id}")]
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
-
+        
         // POST api/<AdminController>
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin")]
         [HttpPost("register/admin")]
         public bool Post([FromBody] User user)
         {
             return _userService.RegisterAdmin(user);
-        }
-
-        //// PUT api/<AdminController>/5
-        //[HttpPut("{id}")]
-        //public void Put(int id, [FromBody] string value)
-        //{
-        //}
-
-        //// DELETE api/<AdminController>/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //}
+        }  
     }
 }

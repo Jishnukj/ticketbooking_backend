@@ -54,13 +54,6 @@ namespace Ticket_Booking.Controllers
             return userRegistered;
         }
 
-        //[HttpPost("login/User")]
-        //public bool Post(string email, string password)
-        //{
-        //    var userRegistered = _userService.LoginUser(email, password);
-        //    return userRegistered;
-        //}
-
         [HttpPost("login")]
         public async Task<IActionResult> checkadmin(string email,string password)
         {
@@ -101,18 +94,5 @@ namespace Ticket_Booking.Controllers
 
         }
 
-
-
-        //// PUT api/<UserController>/5
-        //[HttpPut("{id}")]
-        //public void Put(int id, [FromBody] string value)
-        //{
-        //}
-
-        //// DELETE api/<UserController>/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //}
     }
 }

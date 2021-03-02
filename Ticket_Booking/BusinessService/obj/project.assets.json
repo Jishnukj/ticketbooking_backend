@@ -4288,19 +4288,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jishnu.kj\\.nuget\\packages\\": {}
+    "C:\\Users\\MY PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwtfinal\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\BusinessService.csproj",
+      "projectUniqueName": "C:\\Users\\MY PC\\ExpAss2\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\BusinessService.csproj",
       "projectName": "BusinessService",
-      "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwtfinal\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\BusinessService.csproj",
-      "packagesPath": "C:\\Users\\jishnu.kj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwtfinal\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\obj\\",
+      "projectPath": "C:\\Users\\MY PC\\ExpAss2\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\BusinessService.csproj",
+      "packagesPath": "C:\\Users\\MY PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MY PC\\ExpAss2\\ticketbooking_backend\\Ticket_Booking\\BusinessService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jishnu.kj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MY PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4314,8 +4314,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwtfinal\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj": {
-              "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwtfinal\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj"
+            "C:\\Users\\MY PC\\ExpAss2\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj": {
+              "projectPath": "C:\\Users\\MY PC\\ExpAss2\\ticketbooking_backend\\Ticket_Booking\\DataService\\DataService.csproj"
             }
           }
         }
@@ -4356,7 +4356,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -21,7 +21,7 @@ namespace BusinessService
 
             if (emailAlreadyExists == null)
             {
-                if (user.user_type.Equals("Admin"))
+                if (user.user_type.ToLower().Equals("admin"))
                 {
                    return false;
                 }
@@ -45,19 +45,6 @@ namespace BusinessService
             {
                 return false;
             }
-        }
-
-        public bool LoginUser(string email, string password)
-        {
-            var user = _userRepo.GetUserByEmail(email);
-            if (user != null)
-            {
-                if (user.email == email && user.password == password)
-                    return true;
-                else
-                    return false;
-            }
-            return false;
         }
 
         public User GetUserById(int id)
