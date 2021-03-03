@@ -20,7 +20,7 @@ namespace DataService.Entities
         public int available_seats { get; set; }
         public string artist_name { get; set; }
         public string description { get; set; }
-        public String approval_status { get; set; }
+        public string approval_status { get; set; }
         public string image { get; set; }
         public float ticketprice { get; set; }
 
