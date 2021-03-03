@@ -11,5 +11,6 @@ namespace BuisnessService
         bool addBooking(Booking booking);
         Booking getBookingbyId(int id);
         List<BookingDto> getAllbookings();
+        List<BookingDto> getbookingsByEventid(int id);
     }
 }

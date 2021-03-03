@@ -48,5 +48,12 @@ namespace Ticket_Booking.Controllers
         {
             return Ok(_bookingService.getAllbookings());
         }
+
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin,artist")]
+        [HttpGet("eventbooking/{eventid}")]
+        public IActionResult getBookingByEventid(int eventid)
+        {
+            return Ok(_bookingService.getbookingsByEventid(eventid));
+        }
     }
 }
