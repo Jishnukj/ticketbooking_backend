@@ -15,5 +15,6 @@ namespace BusinessService.Dto
         public DateTime booking_date { get; set; }
         public int No_of_tickets { get; set; }
         public string username { get; set; }
+        public float totalprice { get; set; }
     }
 }

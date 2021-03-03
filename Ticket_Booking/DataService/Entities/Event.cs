@@ -22,6 +22,7 @@ namespace DataService.Entities
         public string description { get; set; }
         public String approval_status { get; set; }
         public string image { get; set; }
+        public int ticketprice { get; set; }
 
     }
 }

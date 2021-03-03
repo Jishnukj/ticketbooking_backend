@@ -27,7 +27,7 @@ namespace BusinessService
 
 
           
-            var data2 = (from ev in events join ven in venue on ev.venue_id equals ven.venue_id select new { ev.event_id, ev.event_name, ev.event_date, ev.event_time, ev.venue_id, ev.available_seats, ev.artist_name, ev.description, ev.approval_status, ev.image, ven.venue_name , ven.total_seats, ven.ticket_rate }).ToList();
+            var data2 = (from ev in events join ven in venue on ev.venue_id equals ven.venue_id select new { ev.event_id, ev.event_name, ev.event_date, ev.event_time, ev.venue_id, ev.available_seats, ev.artist_name, ev.description, ev.approval_status, ev.image, ven.venue_name , ven.total_seats, ev.ticketprice }).ToList();
             var data = data2.OrderByDescending(s => s.event_date);
             return data.Select(a => new EventDto
             {
@@ -42,7 +42,7 @@ namespace BusinessService
                 approval_status=a.approval_status,
                 image=a.image,
                 venue_name=a.venue_name,
-                ticket_rate=a.ticket_rate,
+                ticket_rate=a.ticketprice,
                 total_seats=a.total_seats
 
             }).ToList();
@@ -53,7 +53,7 @@ namespace BusinessService
         {
             var events = _eventRepository.getAllEvents();
             var venue = _venueRepository.getAllVenues();
-            var data2 = (from ev in events join ven in venue on ev.venue_id equals ven.venue_id select new { ev.event_id, ev.event_name, ev.event_date, ev.event_time, ev.venue_id, ev.available_seats, ev.artist_name, ev.description, ev.approval_status, ev.image, ven.venue_name, ven.total_seats, ven.ticket_rate }).ToList();
+            var data2 = (from ev in events join ven in venue on ev.venue_id equals ven.venue_id select new { ev.event_id, ev.event_name, ev.event_date, ev.event_time, ev.venue_id, ev.available_seats, ev.artist_name, ev.description, ev.approval_status, ev.image, ven.venue_name, ven.total_seats, ev.ticketprice }).ToList();
             var datefilter1 = data2.Where(s => s.event_date.Date >= DateTime.Now.Date);
             var data = datefilter1.OrderByDescending(s => s.event_date);
             return data.Select(a => new EventDto
@@ -69,7 +69,7 @@ namespace BusinessService
                 approval_status = a.approval_status,
                 image = a.image,
                 venue_name = a.venue_name,
-                ticket_rate = a.ticket_rate,
+                ticket_rate = a.ticketprice,
                 total_seats = a.total_seats
 
             }).ToList();
@@ -79,7 +79,7 @@ namespace BusinessService
         {
             var events = _eventRepository.getAllEvents();
             var venue = _venueRepository.getAllVenues();
-            var data2 = (from ev in events join ven in venue on ev.venue_id equals ven.venue_id select new { ev.event_id, ev.event_name, ev.event_date, ev.event_time, ev.venue_id, ev.available_seats, ev.artist_name, ev.description, ev.approval_status, ev.image, ven.venue_name, ven.total_seats, ven.ticket_rate }).ToList();
+            var data2 = (from ev in events join ven in venue on ev.venue_id equals ven.venue_id select new { ev.event_id, ev.event_name, ev.event_date, ev.event_time, ev.venue_id, ev.available_seats, ev.artist_name, ev.description, ev.approval_status, ev.image, ven.venue_name, ven.total_seats, ev.ticketprice }).ToList();
             var datefilter1 = data2.Where(s => s.event_date.Date >= DateTime.Now.Date);
             var datefilter2 = datefilter1.Where(s => s.approval_status=="approve");
             var data = datefilter2.OrderByDescending(s => s.event_date);
@@ -96,7 +96,7 @@ namespace BusinessService
                 approval_status = a.approval_status,
                 image = a.image,
                 venue_name = a.venue_name,
-                ticket_rate = a.ticket_rate,
+                ticket_rate = a.ticketprice,
                 total_seats = a.total_seats
 
             }).ToList();
@@ -105,7 +105,7 @@ namespace BusinessService
         {
             var events = _eventRepository.getAllEvents();
             var venue = _venueRepository.getAllVenues();
-            var data2 = (from ev in events join ven in venue on ev.venue_id equals ven.venue_id select new { ev.event_id, ev.event_name, ev.event_date, ev.event_time, ev.venue_id, ev.available_seats, ev.artist_name, ev.description, ev.approval_status, ev.image, ven.venue_name, ven.total_seats, ven.ticket_rate }).ToList();
+            var data2 = (from ev in events join ven in venue on ev.venue_id equals ven.venue_id select new { ev.event_id, ev.event_name, ev.event_date, ev.event_time, ev.venue_id, ev.available_seats, ev.artist_name, ev.description, ev.approval_status, ev.image, ven.venue_name, ven.total_seats, ev.ticketprice }).ToList();
             var datefilter1 = data2.Where(s => s.event_date.Date >= DateTime.Now.Date);
             var datefilter2 = datefilter1.Where(s => s.approval_status != "approve" && s.approval_status != "reject");
             var data = datefilter2.OrderByDescending(s => s.event_date);
@@ -122,7 +122,7 @@ namespace BusinessService
                 approval_status = a.approval_status,
                 image = a.image,
                 venue_name = a.venue_name,
-                ticket_rate = a.ticket_rate,
+                ticket_rate = a.ticketprice,
                 total_seats = a.total_seats
 
             }).ToList();
@@ -134,7 +134,7 @@ namespace BusinessService
             var events = _eventRepository.getAllEvents();
             var venue = _venueRepository.getAllVenues();
 
-            var data = (from ev in events join ven in venue on ev.venue_id equals ven.venue_id where ev.event_id == id select new { ev.event_id, ev.event_name, ev.event_date, ev.event_time, ev.venue_id, ev.available_seats, ev.artist_name, ev.description, ev.approval_status, ev.image, ven.venue_name, ven.total_seats, ven.ticket_rate }).ToList();
+            var data = (from ev in events join ven in venue on ev.venue_id equals ven.venue_id where ev.event_id == id select new { ev.event_id, ev.event_name, ev.event_date, ev.event_time, ev.venue_id, ev.available_seats, ev.artist_name, ev.description, ev.approval_status, ev.image, ven.venue_name, ven.total_seats, ev.ticketprice }).ToList();
             return data.Select(a => new EventDto
             {
                 event_id = a.event_id,
@@ -148,7 +148,7 @@ namespace BusinessService
                 approval_status = a.approval_status,
                 image = a.image,
                 venue_name = a.venue_name,
-                ticket_rate = a.ticket_rate,
+                ticket_rate = a.ticketprice,
                 total_seats = a.total_seats
 
             }).ToList();
@@ -162,7 +162,7 @@ namespace BusinessService
 
 
 
-            var data = (from ev in events join ven in venue on ev.venue_id equals ven.venue_id where ev.event_date.Date == date.Date select new { ev.event_id, ev.event_name, ev.event_date, ev.event_time, ev.venue_id, ev.available_seats, ev.artist_name, ev.description, ev.approval_status, ev.image, ven.venue_name, ven.total_seats, ven.ticket_rate }).ToList();
+            var data = (from ev in events join ven in venue on ev.venue_id equals ven.venue_id where ev.event_date.Date == date.Date select new { ev.event_id, ev.event_name, ev.event_date, ev.event_time, ev.venue_id, ev.available_seats, ev.artist_name, ev.description, ev.approval_status, ev.image, ven.venue_name, ven.total_seats, ev.ticketprice }).ToList();
             return data.Select(a => new EventDto
             {
                 event_id = a.event_id,
@@ -176,7 +176,7 @@ namespace BusinessService
                 approval_status = a.approval_status,
                 image = a.image,
                 venue_name = a.venue_name,
-                ticket_rate = a.ticket_rate,
+                ticket_rate = a.ticketprice,
                 total_seats = a.total_seats
 
             }).ToList();
@@ -205,7 +205,7 @@ namespace BusinessService
             
             var events = _eventRepository.getAllEvents();
             var venue = _venueRepository.getAllVenues();
-            var data2 = (from ev in events join ven in venue on ev.venue_id equals ven.venue_id select new { ev.event_id, ev.event_name, ev.event_date, ev.event_time, ev.venue_id, ev.available_seats, ev.artist_name, ev.description, ev.approval_status, ev.image, ven.venue_name, ven.total_seats, ven.ticket_rate }).ToList();
+            var data2 = (from ev in events join ven in venue on ev.venue_id equals ven.venue_id select new { ev.event_id, ev.event_name, ev.event_date, ev.event_time, ev.venue_id, ev.available_seats, ev.artist_name, ev.description, ev.approval_status, ev.image, ven.venue_name, ven.total_seats, ev.ticketprice }).ToList();
             var datefilter1 = data2.Where(s => s.event_date.Date >= DateTime.Now.Date);
             var data3 = datefilter1.OrderByDescending(s => s.event_date);
             var data=data3.Where(x => x.approval_status == "approve");
@@ -222,7 +222,7 @@ namespace BusinessService
                 approval_status = a.approval_status,
                 image = a.image,
                 venue_name = a.venue_name,
-                ticket_rate = a.ticket_rate,
+                ticket_rate = a.ticketprice,
                 total_seats = a.total_seats
 
             }).ToList();

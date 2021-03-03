@@ -47,7 +47,7 @@ namespace BuisnessService
         {
             var booking= _ibookingRepo.getAllbookings();
             var user = _iuserRepo.GetAllUsers();
-            var data = (from bo in booking join us in user on bo.user_id equals us.user_id select new {bo.booking_id,bo.user_id,bo.event_id,bo.booking_date,bo.No_of_tickets,us.user_name }).ToList();
+            var data = (from bo in booking join us in user on bo.user_id equals us.user_id select new {bo.booking_id,bo.user_id,bo.event_id,bo.booking_date,bo.totalprice,bo.No_of_tickets,us.user_name }).ToList();
             return data.Select(a => new BookingDto
             {
                booking_id=a.booking_id,
@@ -55,7 +55,9 @@ namespace BuisnessService
                event_id=a.event_id,
                booking_date=a.booking_date,
                No_of_tickets=a.No_of_tickets,
-               username=a.user_name
+               username=a.user_name,
+               totalprice=a.totalprice
+              
 
             }).ToList();
         }
@@ -68,7 +70,7 @@ namespace BuisnessService
             {
                 var booking = _ibookingRepo.getAllbookings().Where(x => x.event_id == id).ToList();
                 var user = _iuserRepo.GetAllUsers();
-                var data = (from bo in booking join us in user on bo.user_id equals us.user_id select new { bo.booking_id, bo.user_id, bo.event_id, bo.booking_date, bo.No_of_tickets, us.user_name }).ToList();
+                var data = (from bo in booking join us in user on bo.user_id equals us.user_id select new { bo.booking_id, bo.user_id, bo.event_id, bo.booking_date, bo.totalprice, bo.No_of_tickets, us.user_name }).ToList();
                 return data.Select(a => new BookingDto
                 {
                     booking_id = a.booking_id,
@@ -76,7 +78,9 @@ namespace BuisnessService
                     event_id = a.event_id,
                     booking_date = a.booking_date,
                     No_of_tickets = a.No_of_tickets,
-                    username = a.user_name
+                    username = a.user_name,
+                    totalprice = a.totalprice
+
 
                 }).ToList();
             }
